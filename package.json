@@ -1,13 +1,14 @@
 {
   "name": "@daniel-ordonez/vue-auto-typing",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "author": {
     "name": "daniel ordonez"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/daniel-ordonez/vue-auto-typing"
+    "url": "https://github.com/daniel-ordonez/vue-auto-typing",
+    "homepage": "https://github.com/daniel-ordonez/vue-auto-typing#readme"
   },
   "license": "MIT",
   "main": "./dist/VueAutoTyping.common.js",
