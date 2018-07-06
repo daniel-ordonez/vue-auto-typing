@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <auto-typing ref="autoTyping" :split="true" :delay=500 >I love ...</auto-typing>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AutoTyping from './components/VueAutoTyping.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    AutoTyping
+  },
+  mounted(){
+    this.$refs.autoTyping.push("Never mind.");
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body{
+  font-family: 'San Francisco', 'Helvetica Neue', 'Lucida Grande', 'Segoe UI', 'Roboto', 'Tahoma', 'Ubuntu';
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 0.5em;
 }
 </style>
+
+

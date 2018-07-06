@@ -1,11 +1,30 @@
 {
-  "name": "auto-typing",
+  "name": "vue-auto-typing",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "daniel ordonez"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue component",
+    "auto typing"
+  ],
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-vue": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib --name VueAutoTyping ./src/components/VueAutoTyping.vue",
+    "build-wc": "vue-cli-service build --target wc --name auto-typing ./src/wrapper.js --dest ./web-component"
   },
   "dependencies": {
     "vue": "^2.5.16"
