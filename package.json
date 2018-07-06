@@ -1,11 +1,16 @@
 {
-  "name": "vue-auto-typing",
+  "name": "@daniel-ordonez/vue-auto-typing",
   "version": "0.1.0",
   "private": false,
   "author": {
     "name": "daniel ordonez"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daniel-ordonez/vue-auto-typing"
+  },
   "license": "MIT",
+  "main": "./dist/VueAutoTyping.common.js",
   "keywords": [
     "vue",
     "vuejs",

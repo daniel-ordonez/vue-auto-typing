@@ -11,7 +11,7 @@ Vuejs component for auto typing your text.
 * [Support](#support)
 * [Contributing](#contributing)
 * [License](#license)
-* [Bonus](#user-content-buy-me-a-coffe)
+* [Bonus](#buy-me-a-coffee)
 
 # Installation
 
