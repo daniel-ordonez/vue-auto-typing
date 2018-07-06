@@ -61,6 +61,11 @@ export default {
             default: false,
             required: false
         },
+        loop:{
+            type: Boolean,
+            default: false,
+            required: false
+        },
     },
     data(){
         return{
@@ -68,7 +73,6 @@ export default {
             queue: [],
             index: 0,
             showCursor: true,
-            isTyping: false
         }
     },
     computed:{
@@ -98,7 +102,6 @@ export default {
             }
         },
         async typing(){
-            this.isTyping = true;
             this.showCursor = this.cursor.length > 0;
             let wait = 0;
             for( let i=0; i < this.current.length; i++ ){
@@ -106,13 +109,17 @@ export default {
                 await timeout(wait);
                 this.text += this.current[i];
             }
-            this.showCursor = this.keepCursor;
-            this.isTyping = false;
+            await timeout( this.readtime );
             if( this.index < this.queue.length - 1 ){
-                await timeout(wait);
                 await this.erasing();
                 this.index += 1;
                 this.typing();
+            }else if( this.loop ){
+                await this.erasing();
+                this.index = 0;
+                this.typing();
+            }else{
+                this.showCursor = this.keepCursor;
             }
         }
     },

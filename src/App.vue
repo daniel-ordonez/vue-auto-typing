@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <auto-typing ref="autoTyping" :split="true" :delay=500 >I love ...</auto-typing>
+    <auto-typing ref="autoTyping" :loop="true" :split="true" :delay=500 >I love ...</auto-typing>
   </div>
 </template>
 

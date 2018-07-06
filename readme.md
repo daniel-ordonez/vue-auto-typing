@@ -2,6 +2,8 @@
 
 Vuejs component for auto typing your text.
 
+[![npm version][0]][1]
+
 ![auto typing text](./screenshots/sample.gif)
 
 # Table of contents
@@ -143,3 +145,6 @@ Please [open an issue](https://github.com/daniel-ordonez/vue-chatui/issuess/new)
 <a href="https://www.buymeacoffee.com/danielordonez" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 Yay! 🎉 You reached the end.
+
+[0]: https://img.shields.io/badge/npm-0.1.1-lightgrey.svg
+[1]: https://www.npmjs.com/package/@daniel-ordonez/vue-auto-typing
